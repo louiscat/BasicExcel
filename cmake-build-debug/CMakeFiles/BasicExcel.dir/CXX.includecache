@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+G:/BasicExcel/BasicExcel.cpp
+BasicExcel.hpp
+G:/BasicExcel/BasicExcel.hpp
+
+G:/BasicExcel/BasicExcel.hpp
+algorithm
+-
+cmath
+-
+functional
+-
+iostream
+-
+iomanip
+-
+fstream
+-
+map
+-
+vector
+-
+cstring
+-
+
