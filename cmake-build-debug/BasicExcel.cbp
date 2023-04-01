@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="BasicExcel"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="G:/BasicExcel/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="G:/BasicExcel/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BasicExcel">
+				<Option output="G:/BasicExcel/cmake-build-debug/libBasicExcel.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/BasicExcel/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Soft/Clion/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/Soft/Clion/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Soft/Clion/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/Soft/Clion/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/Soft/Clion/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/Soft/Clion/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 BasicExcel"/>
+					<CompileFile command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BasicExcel/fast">
+				<Option output="G:/BasicExcel/cmake-build-debug/libBasicExcel.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/BasicExcel/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Soft/Clion/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/Soft/Clion/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Soft/Clion/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/Soft/Clion/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/Soft/Clion/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/Soft/Clion/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 BasicExcel/fast"/>
+					<CompileFile command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="G:/BasicExcel/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Soft/Clion/mingw64/bin/mingw32-make.exe -f &quot;G:/BasicExcel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="G:/BasicExcel/BasicExcel.cpp">
+			<Option target="BasicExcel"/>
+		</Unit>
+		<Unit filename="G:/BasicExcel/BasicExcel.hpp">
+			<Option target="BasicExcel"/>
+		</Unit>
+		<Unit filename="G:/BasicExcel/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
