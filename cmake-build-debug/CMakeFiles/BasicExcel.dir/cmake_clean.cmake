@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/BasicExcel.dir/BasicExcel.cpp.obj"
+  "CMakeFiles/BasicExcel.dir/libExcel.cpp.obj"
   "libBasicExcel.a"
   "libBasicExcel.pdb"
 )

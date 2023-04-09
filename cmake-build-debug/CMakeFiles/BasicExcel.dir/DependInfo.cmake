@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "G:/BasicExcel/BasicExcel.cpp" "G:/BasicExcel/cmake-build-debug/CMakeFiles/BasicExcel.dir/BasicExcel.cpp.obj"
+  "G:/BasicExcel/libExcel.cpp" "G:/BasicExcel/cmake-build-debug/CMakeFiles/BasicExcel.dir/libExcel.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

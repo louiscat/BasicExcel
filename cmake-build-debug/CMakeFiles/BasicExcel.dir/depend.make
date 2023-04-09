@@ -4,3 +4,7 @@
 CMakeFiles/BasicExcel.dir/BasicExcel.cpp.obj: ../BasicExcel.cpp
 CMakeFiles/BasicExcel.dir/BasicExcel.cpp.obj: ../BasicExcel.hpp
 
+CMakeFiles/BasicExcel.dir/libExcel.cpp.obj: ../BasicExcel.hpp
+CMakeFiles/BasicExcel.dir/libExcel.cpp.obj: ../libExcel.cpp
+CMakeFiles/BasicExcel.dir/libExcel.cpp.obj: ../libExcel.h
+

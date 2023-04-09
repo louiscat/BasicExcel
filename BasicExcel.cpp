@@ -1,4 +1,10 @@
 #include "BasicExcel.hpp"
+#include <string>
+#include <memory>
+#include <windows.h>
+#include <codecvt>
+#include <vector>
+#include <algorithm>
 
 namespace YCompoundFiles
 {
@@ -19,7 +25,7 @@ bool Block::Create(const wchar_t* filename)
 	wcstombs(name, filename, filenameLength);
 	name[filenameLength] = 0;
 
-	file_.open(name, ios_base::out | ios_base::trunc);
+    file_.open(name, ios_base::out | ios_base::trunc);
 	file_.close();
 	file_.clear();
 
@@ -38,7 +44,7 @@ bool Block::Open(const wchar_t* filename, ios_base::openmode mode)
 	filename_.resize(filenameLength+1, 0);
 	wcstombs(&*(filename_.begin()), filename, filenameLength);
 
-	file_.open(&*(filename_.begin()), mode | ios_base::binary);
+    file_.open(&*(filename_.begin()), mode | ios_base::binary);
 	if (!file_.is_open()) return false;
 
 	mode_ = mode;
@@ -115,8 +121,8 @@ bool Block::Write(size_t index, const char* block)
 	}
 	file_.close();
 	file_.clear();
-	file_.open(&*(filename_.begin()), mode_ | ios_base::binary);
-	return file_.is_open();		
+    file_.open(&*(filename_.begin()), mode_ | ios_base::binary);
+    return file_.is_open();
 }
 
 bool Block::Swap(size_t index1, size_t index2)
@@ -4461,9 +4467,9 @@ bool CanStoreAsRKValue(double value)
 
 /************************************************************************************************************/
 BasicExcel::BasicExcel() {};
-BasicExcel::BasicExcel(const char* filename) 
+BasicExcel::BasicExcel(string xlsfilename)
 {
-	Load(filename);
+	Load(xlsfilename);
 }
 
 BasicExcel::~BasicExcel() 
@@ -4488,8 +4494,16 @@ void BasicExcel::New(int sheets)
 }
 
 // Load an Excel workbook from a file.
-bool BasicExcel::Load(const char* filename)
+bool BasicExcel::Load(string xlsfilename)
 {
+    wstring_convert<std::codecvt_utf8_utf16<wchar_t>> converter;
+    wstring wfilename = converter.from_bytes(xlsfilename);
+
+    // 将Unicode编码转换为UTF-8编码
+    int len = WideCharToMultiByte(CP_ACP, 0, wfilename.c_str(), -1, NULL, 0, NULL, NULL);
+    char* filename = new char[len+1];
+    WideCharToMultiByte(CP_ACP, 0, wfilename.c_str(), -1, filename, len, NULL, NULL);
+
 	if (file_.IsOpen()) file_.Close();
 	if (file_.Open(filename))
 	{
@@ -4534,8 +4548,15 @@ bool BasicExcel::Save()
 }
 
 // Save current Excel workbook to a file.
-bool BasicExcel::SaveAs(const char* filename)
+bool BasicExcel::SaveAs(string xlsfilename)
 {
+    wstring_convert<std::codecvt_utf8_utf16<wchar_t>> converter;
+    wstring wfilename = converter.from_bytes(xlsfilename);
+
+    // 将Unicode编码转换为UTF-8编码
+    int len = WideCharToMultiByte(CP_ACP, 0, wfilename.c_str(), -1, NULL, 0, NULL, NULL);
+    char* filename = new char[len+1];
+    WideCharToMultiByte(CP_ACP, 0, wfilename.c_str(), -1, filename, len, NULL, NULL);
 	if (file_.IsOpen()) file_.Close();
 
 	if (!file_.Create(filename)) return false;
@@ -5838,7 +5859,7 @@ void BasicExcelCell::SetString(const char* str)
 }
 
 // Set content of current Excel cell to an Unicode string.
-void BasicExcelCell::SetWString(const wchar_t* str)	
+void BasicExcelCell::SetWString(const wchar_t* str)
 {
 	size_t length = wcslen(str);
 	if (length > 0)

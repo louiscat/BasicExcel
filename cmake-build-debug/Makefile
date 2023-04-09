@@ -169,6 +169,33 @@ BasicExcel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BasicExcel.dir\build.make CMakeFiles/BasicExcel.dir/BasicExcel.cpp.s
 .PHONY : BasicExcel.cpp.s
 
+libExcel.obj: libExcel.cpp.obj
+
+.PHONY : libExcel.obj
+
+# target to build an object file
+libExcel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BasicExcel.dir\build.make CMakeFiles/BasicExcel.dir/libExcel.cpp.obj
+.PHONY : libExcel.cpp.obj
+
+libExcel.i: libExcel.cpp.i
+
+.PHONY : libExcel.i
+
+# target to preprocess a source file
+libExcel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BasicExcel.dir\build.make CMakeFiles/BasicExcel.dir/libExcel.cpp.i
+.PHONY : libExcel.cpp.i
+
+libExcel.s: libExcel.cpp.s
+
+.PHONY : libExcel.s
+
+# target to generate assembly for a file
+libExcel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BasicExcel.dir\build.make CMakeFiles/BasicExcel.dir/libExcel.cpp.s
+.PHONY : libExcel.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -181,6 +208,9 @@ help:
 	@echo ... BasicExcel.obj
 	@echo ... BasicExcel.i
 	@echo ... BasicExcel.s
+	@echo ... libExcel.obj
+	@echo ... libExcel.i
+	@echo ... libExcel.s
 .PHONY : help
 
 

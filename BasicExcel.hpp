@@ -56,6 +56,9 @@
 #include <map>
 #include <vector>
 #include <cstring>
+#include <memory>
+#include <windows.h>
+#include <codecvt>
 
 using namespace std;
 
@@ -1115,14 +1118,14 @@ class BasicExcel
 {
 public:
 	BasicExcel();
-	BasicExcel(const char* filename);
+	BasicExcel(string filename);
 	~BasicExcel();
 
 public: // File functions.
 	void New(int sheets=3);	///< Create a new Excel workbook with a given number of spreadsheets (Minimum 1).
-	bool Load(const char* filename);	///< Load an Excel workbook from a file.
+	bool Load(string filename);	///< Load an Excel workbook from a file.
 	bool Save();	///< Save current Excel workbook to opened file.
-	bool SaveAs(const char* filename);	///< Save current Excel workbook to a file.
+	bool SaveAs(string filename);	///< Save current Excel workbook to a file.
 
 public: // Worksheet functions.
 	size_t GetTotalWorkSheets();	///< Total number of Excel worksheets in current Excel workbook.

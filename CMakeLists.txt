@@ -3,4 +3,4 @@ project(BasicExcel)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_library(BasicExcel BasicExcel.cpp BasicExcel.hpp)
+add_library(BasicExcel BasicExcel.cpp BasicExcel.hpp libExcel.cpp libExcel.h)

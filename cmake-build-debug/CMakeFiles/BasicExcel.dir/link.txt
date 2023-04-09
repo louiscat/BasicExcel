@@ -1,2 +1,2 @@
-D:\Soft\Clion\mingw64\bin\ar.exe qc libBasicExcel.a  CMakeFiles/BasicExcel.dir/BasicExcel.cpp.obj
+D:\Soft\Clion\mingw64\bin\ar.exe qc libBasicExcel.a  CMakeFiles/BasicExcel.dir/BasicExcel.cpp.obj CMakeFiles/BasicExcel.dir/libExcel.cpp.obj
 D:\Soft\Clion\mingw64\bin\ranlib.exe libBasicExcel.a

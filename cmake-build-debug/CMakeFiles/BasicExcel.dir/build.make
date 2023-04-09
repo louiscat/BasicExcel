@@ -89,17 +89,32 @@ CMakeFiles/BasicExcel.dir/BasicExcel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicExcel.dir/BasicExcel.cpp.s"
 	D:\Soft\Clion\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\BasicExcel\BasicExcel.cpp -o CMakeFiles\BasicExcel.dir\BasicExcel.cpp.s
 
+CMakeFiles/BasicExcel.dir/libExcel.cpp.obj: CMakeFiles/BasicExcel.dir/flags.make
+CMakeFiles/BasicExcel.dir/libExcel.cpp.obj: ../libExcel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\BasicExcel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BasicExcel.dir/libExcel.cpp.obj"
+	D:\Soft\Clion\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\BasicExcel.dir\libExcel.cpp.obj -c G:\BasicExcel\libExcel.cpp
+
+CMakeFiles/BasicExcel.dir/libExcel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicExcel.dir/libExcel.cpp.i"
+	D:\Soft\Clion\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\BasicExcel\libExcel.cpp > CMakeFiles\BasicExcel.dir\libExcel.cpp.i
+
+CMakeFiles/BasicExcel.dir/libExcel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicExcel.dir/libExcel.cpp.s"
+	D:\Soft\Clion\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\BasicExcel\libExcel.cpp -o CMakeFiles\BasicExcel.dir\libExcel.cpp.s
+
 # Object files for target BasicExcel
 BasicExcel_OBJECTS = \
-"CMakeFiles/BasicExcel.dir/BasicExcel.cpp.obj"
+"CMakeFiles/BasicExcel.dir/BasicExcel.cpp.obj" \
+"CMakeFiles/BasicExcel.dir/libExcel.cpp.obj"
 
 # External object files for target BasicExcel
 BasicExcel_EXTERNAL_OBJECTS =
 
 libBasicExcel.a: CMakeFiles/BasicExcel.dir/BasicExcel.cpp.obj
+libBasicExcel.a: CMakeFiles/BasicExcel.dir/libExcel.cpp.obj
 libBasicExcel.a: CMakeFiles/BasicExcel.dir/build.make
 libBasicExcel.a: CMakeFiles/BasicExcel.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=G:\BasicExcel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libBasicExcel.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=G:\BasicExcel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libBasicExcel.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\BasicExcel.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\BasicExcel.dir\link.txt --verbose=$(VERBOSE)
 

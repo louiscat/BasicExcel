@@ -86,6 +86,12 @@
 		<Unit filename="G:/BasicExcel/BasicExcel.hpp">
 			<Option target="BasicExcel"/>
 		</Unit>
+		<Unit filename="G:/BasicExcel/libExcel.cpp">
+			<Option target="BasicExcel"/>
+		</Unit>
+		<Unit filename="G:/BasicExcel/libExcel.h">
+			<Option target="BasicExcel"/>
+		</Unit>
 		<Unit filename="G:/BasicExcel/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
